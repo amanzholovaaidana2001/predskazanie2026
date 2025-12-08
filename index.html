@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #000000; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Предсказание 2026&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(135deg, #ffecd2, #fcb69f);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
+<p class="p1">}</p>
+<p class="p1">h1 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 40px;</p>
+<p class="p1">}</p>
+<p class="p1">#prediction {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #8b0000;</p>
+<p class="p1">}</p>
+<p class="p1">#wheel {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 10px solid white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: url('https://i.imgur.com/8Km9tLL.png') no-repeat center/cover;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>animation: spin 2s ease-out;</p>
+<p class="p1">}</p>
+<p class="p1">@keyframes spin {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>from { transform: rotate(0deg); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>to <span class="Apple-converted-space">  </span>{ transform: rotate(720deg); }</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;Что тебя ждёт в 2026 году?&lt;/h1&gt;</p>
+<p class="p1">&lt;div id="wheel"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div id="prediction"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const predictions = [</p>
+<p class="p1">"Тебя ждёт счастливая неожиданность.",</p>
+<p class="p1">"Год принесёт прибыль.",</p>
+<p class="p1">"Откроется новая возможность.",</p>
+<p class="p1">"Встретится важный человек.",</p>
+<p class="p1">"Восстановится то, что было потеряно.",</p>
+<p class="p1">"Будет лёгкое путешествие.",</p>
+<p class="p1">"К тебе придёт подарок.",</p>
+<p class="p1">"Укрепятся отношения.",</p>
+<p class="p1">"Будет важное приятное решение.",</p>
+<p class="p1">"Тебя ждёт поддержка Вселенной.",</p>
+<p class="p1">"Придёт новая энергия.",</p>
+<p class="p1">"Исполнится желание.",</p>
+<p class="p1">"Будет выгодная покупка.",</p>
+<p class="p1">"Произойдёт романтическое событие.",</p>
+<p class="p1">"Появится новое хобби.",</p>
+<p class="p1">"Ты получишь комплимент, который запомнишь.",</p>
+<p class="p1">"Начнёшь что-то новое.",</p>
+<p class="p1">"Деньги вернутся.",</p>
+<p class="p1">"Будет улучшение в здоровье.",</p>
+<p class="p1">"Легко решится сложная проблема.",</p>
+<p class="p1">"Появится вдохновение.",</p>
+<p class="p1">"Влюбишься.",</p>
+<p class="p1">"Получишь то, что давно ждала.",</p>
+<p class="p1">"Год будет спокойным.",</p>
+<p class="p1">"Работа станет легче.",</p>
+<p class="p1">"Тебя оценят.",</p>
+<p class="p1">"Получишь благодарность.",</p>
+<p class="p1">"Придёт удача в самый нужный момент.",</p>
+<p class="p1">"Тебя ждёт мощная перемена.",</p>
+<p class="p1">"Год будет насыщенным.",</p>
+<p class="p1">"Ты станешь сильнее.",</p>
+<p class="p1">"Услышишь хорошие новости.",</p>
+<p class="p1">"Кто-то признается в симпатии.",</p>
+<p class="p1">"Получишь финансовый бонус.",</p>
+<p class="p1">"Найдёшь красивую вещь.",</p>
+<p class="p1">"Появится шанс заработать.",</p>
+<p class="p1">"Встретишь нового друга.",</p>
+<p class="p1">"Начнёшь смотреть на мир по-новому.",</p>
+<p class="p1">"Будешь чаще улыбаться.",</p>
+<p class="p1">"Увидишь красивое место.",</p>
+<p class="p1">"Получишь ценный совет.",</p>
+<p class="p1">"Зарядишься энергией.",</p>
+<p class="p1">"Будет тёплый подарок.",</p>
+<p class="p1">"Добьёшься результата.",</p>
+<p class="p1">"Тебя ждёт вдохновляющий человек.",</p>
+<p class="p1">"Приобретёшь уверенность.",</p>
+<p class="p1">"Исчезнет сомнение.",</p>
+<p class="p1">"Придёт гармония.",</p>
+<p class="p1">"Будут новые знакомства.",</p>
+<p class="p1">"Получишь признание.",</p>
+<p class="p1">"Удача станет спутником.",</p>
+<p class="p1">"Будет романтика.",</p>
+<p class="p1">"Получишь шанс проявить себя.",</p>
+<p class="p1">"Появится уют.",</p>
+<p class="p1">"Финансовые страхи исчезнут.",</p>
+<p class="p1">"Будет радость.",</p>
+<p class="p1">"Случится маленькое чудо.",</p>
+<p class="p1">"Найдёшь спокойствие.",</p>
+<p class="p1">"Получишь подарок судьбы.",</p>
+<p class="p1">"Откроется новый путь.",</p>
+<p class="p1">"Появится больше свободы.",</p>
+<p class="p1">"Уйдут старые переживания.",</p>
+<p class="p1">"Откроешь талант.",</p>
+<p class="p1">"Появится источник силы.",</p>
+<p class="p1">"Фортуна улыбнётся.",</p>
+<p class="p1">"Получишь шанс переехать.",</p>
+<p class="p1">"Улучшится личная жизнь.",</p>
+<p class="p1">"Появится вдохновение.",</p>
+<p class="p1">"Тебя ждёт яркое событие.",</p>
+<p class="p1">"Решится важный вопрос.",</p>
+<p class="p1">"Будет новое начало.",</p>
+<p class="p1">"Избавишься от лишнего.",</p>
+<p class="p1">"Получишь нужную сумму.",</p>
+<p class="p1">"Взойдёшь на новый уровень.",</p>
+<p class="p1">"Всё наладится.",</p>
+<p class="p1">"Появится человек, который поможет.",</p>
+<p class="p1">"Ты почувствуешь лёгкость.",</p>
+<p class="p1">"Придёт сила действовать.",</p>
+<p class="p1">"Будет романтика.",</p>
+<p class="p1">"Улыбнётся случай.",</p>
+<p class="p1">"Откроется возможность обучения.",</p>
+<p class="p1">"Сделаешь мудрый выбор.",</p>
+<p class="p1">"Будет крупный успех.",</p>
+<p class="p1">"Повысится настроение.",</p>
+<p class="p1">"К тебе вернётся верный человек.",</p>
+<p class="p1">"Тебя окружат заботой.",</p>
+<p class="p1">"Улучшатся отношения в семье.",</p>
+<p class="p1">"Появится причина гордиться собой.",</p>
+<p class="p1">"Будет крупная удача.",</p>
+<p class="p1">"Исчезнет страх.",</p>
+<p class="p1">"Ты увидишь что-то красивое.",</p>
+<p class="p1">"Влюбишься в жизнь заново.",</p>
+<p class="p1">"Появится вдохновляющая идея.",</p>
+<p class="p1">"Получишь неожиданную награду.",</p>
+<p class="p1">"Год будет лёгким.",</p>
+<p class="p1">"В жизни станет больше любви.",</p>
+<p class="p1">"Ты станешь счастливее.",</p>
+<p class="p1">"2026 год будет одним из лучших."</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">function showPrediction() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const random = predictions[Math.floor(Math.random()*predictions.length)];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("prediction").innerText = random;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">setTimeout(showPrediction, 2000);</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
